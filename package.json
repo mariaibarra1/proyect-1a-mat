@@ -1,0 +1,28 @@
+{
+  "name": "proyect-1a-mat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariaibarra1/proyect-1a-mat.git"
+  },
+  "keywords": [
+    "math",
+    "matematicas",
+    "suma",
+    "resta",
+    "division",
+    "multi",
+    "basico"
+  ],
+  "author": "mfgi",
+  "license": "MIT ",
+  "bugs": {
+    "url": "https://github.com/mariaibarra1/proyect-1a-mat/issues"
+  },
+  "homepage": "https://github.com/mariaibarra1/proyect-1a-mat#readme"
+}
