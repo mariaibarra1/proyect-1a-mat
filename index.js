@@ -9,7 +9,7 @@ module.exports = {
     */
     suma: function (param1, patram2) {
         
-        return param1 + patram2;
+        return (this.esNumero( param1 , patram2)? param1 + patram2 : this.mensajeError());
     },
        /**
         * REsta de dos numeros 
@@ -21,7 +21,7 @@ module.exports = {
     */
     resta: function (param1, patram2) {
         
-        return param1 - patram2;
+        return (this.esNumero( param1 , patram2)? param1 - patram2 : this.mensajeError());
     },
        /**
         * multi de dos numeros 
@@ -33,7 +33,7 @@ module.exports = {
     */
     multi: function (param1, patram2) {
         
-        return param1 * patram2;
+        return (this.esNumero( param1 , patram2)? param1 * patram2 : this.mensajeError());
     },
        /**
         * division de dos numeros 
@@ -45,6 +45,24 @@ module.exports = {
     */
     divi: function (param1, patram2) {
         
-        return param1 / patram2;
+        return (this.esNumero( param1 , patram2)? param1 / patram2 : this.mensajeError());
     },
+    /**
+     * mensaje de error que se ejecuta cuando no tengamos valores numericos 
+     */
+    mensajeError: function () {
+        console.log('un valor o los dos valores no son numericos ');
+    },
+    /**
+     * Comprueba que son valores numericos 
+     * @param {*} param1 
+     * @param {*} param2 
+     * @returns 
+     */
+    esNumero:  function (param1,param2) {
+        if (typeof param1 != 'number' || typeof param2 != 'number' ) {
+            return false;
+        }
+        return true
+    }
 }
